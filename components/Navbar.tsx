@@ -15,7 +15,7 @@ const Navbar  =  () => {
             >
                 <Image className='w-14' src={logo} alt='logo'/>
             </motion.div>
-            <div>
+            <div className='hidden mdl:inline-flex items-center gap-7'>
                 <ul className='flex text-[13px] gap-7'>
                     <Link
                     href="#Home"
@@ -83,6 +83,24 @@ const Navbar  =  () => {
                         </motion.li>
                     </Link>
                 </ul>
+                <a href="/assets/mamadou-resume.pdf" target='_blank'>
+                    <motion.button
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{delay: 0.5}}
+                    className='px-4 py-2 rounded-md text-textOrange text-[13px] border border-textOrange hover:bg-hoverColor duration-300'
+                    >
+                        Resume
+                    </motion.button>
+                </a>
+            </div>
+            {/* small icon section */}
+            <div className='w-6 h-5 flex flex-col justify-between items-center mdl:hidden text-4xl text-textOrange cursor-pointer overflow-hidden group'>
+                <span className='w-full h-[2px] bg-textOrange inline-flex transform group-hover:translate-x-2 transition-all ease-in-out duration-300'></span>
+                <span className='w-full h-[2px] bg-textOrange inline-flex transform translate-x-3 group-hover:translate-x-0 transition-all ease-in-out
+                duration-300'></span>
+                <span className='w-full h-[2px] bg-textOrange inline-flex transform translate-x-1 group-hover:translate-x-3 transition-all ease-in-out
+                duration-300'></span>
             </div>
         </div>
     </div>
