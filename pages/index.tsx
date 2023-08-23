@@ -1,10 +1,10 @@
 import { LeftSide } from "@/components/LeftSide";
 import RightSide from "@/components/RightSide";
 import Navbar from "@/components/Navbar";
-import Page from "@/components/page";
 import Head from "next/head";
 import { motion } from "framer-motion";
 import Banner from "@/components/Banner";
+import About from "@/components/About";
 
 export default function Home() {
   return (
@@ -26,7 +26,7 @@ export default function Home() {
         </motion.div>
         <div className="h-[88vh] w-full mx-auto p-4 ">
           <Banner/>
-          {/* About */}
+          <About/>
           {/* Experiences */}
           {/* Projects */}
           {/* Archive */}
