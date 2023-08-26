@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Banner from "@/components/Banner";
 import About from "@/components/About";
 import Content from "@/components/Content";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <div className="h-[88vh] w-full mx-auto p-4 ">
           <Banner/>
           <Content/>
+          <Footer/>
          
           {/* Experiences */}
           {/* Projects */}
