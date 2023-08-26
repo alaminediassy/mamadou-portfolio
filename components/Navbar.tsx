@@ -19,7 +19,7 @@ const Navbar  =  () => {
                 <ul className='flex text-[13px] gap-7'>
                     <Link
                     href="#Home"
-                    className='flex items-center gap-1 font-medium text-textDark hover:text-textOrange
+                    className='flex items-center gap-1 font-medium text-textdark hover:text-textOrange
                     cursor-pointer duration-300 nav-link'
                     >
                         <motion.li

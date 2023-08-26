@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       maxWidth: {
         container: "1440px",
-        contentContainer: "1140px",
+        contentContainer: "1110px",
         containerSmall: "1024px",
         containerxs: "768px",
       },
@@ -35,7 +35,9 @@ const config: Config = {
         bodyColor: "#0A192F",
         textOrange: "#DF5601",
         textLight: "#ccd6f6",
+        textSlow: "#bbcaea",
         textdark: "#8892b0",
+        bodyText: "#dce3f4",
         hoverColor: "rgba(100, 255, 218, 0.1)"
       },
     },
