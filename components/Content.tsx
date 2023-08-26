@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Articles from "./Articles";
 import Newsletter from "./Newsletter";
+import Work from "./Work";
 
 
 
@@ -12,6 +13,7 @@ const Content = () => {
         <Articles/>
         <div className="space-y-10 lg:pl-16 xl:pl-18">
           <Newsletter/>
+          <Work/>
         </div>
       </div>
     </div>
