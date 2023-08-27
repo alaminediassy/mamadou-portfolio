@@ -86,7 +86,7 @@ const Articles = () => {
             </p>
           </div>
           <div className="relative z-10 mt-4 flex items-center text-sm font-medium text-textOrange">
-            read more
+            <a href="#" className="cursor-pointer">read more</a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

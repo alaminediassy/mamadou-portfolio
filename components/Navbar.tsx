@@ -31,7 +31,7 @@ const Navbar  =  () => {
                         </motion.li>
                     </Link>
                     <Link
-                    href="#About"
+                    href="/About"
                     className='flex items-center gap-1 font-medium text-textDark hover:text-textOrange cursor-pointer
                     duration-300 nav-link'
                     >

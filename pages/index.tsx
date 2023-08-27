@@ -7,6 +7,7 @@ import Banner from "@/components/Banner";
 import About from "@/components/About";
 import Content from "@/components/Content";
 import Footer from "@/components/Footer";
+import FloatingImg from "@/components/FloatingImg";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         </motion.div>
         <div className="h-[88vh] w-full mx-auto p-4 ">
           <Banner/>
+          <FloatingImg/>
           <Content/>
           <Footer/>
          
