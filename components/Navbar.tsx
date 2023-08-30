@@ -44,7 +44,7 @@ const Navbar  =  () => {
                         </motion.li>
                     </Link>
                     <Link
-                    href="#Experience"
+                    href="/Experience"
                     className='flex items-center gap-1 font-medium text-textDark hover:text-textOrange cursor-pointer
                     duration-300 nav-link'
                     >
@@ -57,7 +57,7 @@ const Navbar  =  () => {
                         </motion.li>
                     </Link>
                     <Link
-                    href="#Projects"
+                    href="/Project"
                     className='flex items-center gap-1 font-medium text-textDark hover:text-textOrange cursor-pointer
                     duration-300 nav-link'
                     >

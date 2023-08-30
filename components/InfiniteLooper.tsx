@@ -8,7 +8,7 @@ import Image5 from "../public/assets/images/image-5.jpg"
 
 
 
-const FloatingImg = () => {
+const InfiniteLooper = () => {
   return (
     <div className='mt-16 sm:mt-20'>
         <div className='-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8'>
@@ -42,4 +42,4 @@ const FloatingImg = () => {
   )
 }
 
-export default FloatingImg
+export default InfiniteLooper

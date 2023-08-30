@@ -24,7 +24,7 @@ const Banner = () => {
         transition={{duration: 0.5, delay: 0.7}}
         className="text-5xl lgl:text-5xl font-titleFont font-semibold flex flex-col tracking-tight sm:text-5xl "
         >
-            Software developer, intern in <br /> web development, and amateur design.{" "}
+            Software developer, intern in <br /> web development, and amateur in design.{" "}
             {/* <span className="text-textdark mt-2 lgl:mt-4">
                 I build things for the web.
             </span> */}

@@ -1,10 +1,31 @@
+import { useState, useEffect } from "react";
 import Image from "next/image";
-import React from "react";
 import Profile from "../public/assets/images/alamine_profile.png";
 
 const Header = () => {
+  const [navbarBgColor, setNavbarBgColor] = useState('');
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      if (scrollY > 100) {
+        setNavbarBgColor('bg-gray-800'); // Remplacez par la classe de couleur de fond souhaitée de Tailwind
+      } else {
+        setNavbarBgColor('');
+      }
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  
   return (
-    <header className="pointer-events-none relative z-50 flex flex-none flex-col">
+    <nav className={` ${navbarBgColor}`}>
+      <div className="pointer-events-none relative z-50 flex flex-none flex-col">
       <div className="top-0 z-10 h-16 pt-6">
         <div className="sm:px-8 top-[var(--header-top,theme(spacing.6))] w-full">
           <div className="mx-auto w-full max-w-7xl lg:px-8">
@@ -26,8 +47,8 @@ const Header = () => {
                     <div className="pointer-events-auto md:hidden">
                       <button
                         className="group flex items-center rounded-full 
-                                            bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg 
-                                            shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 
+                                            bg-white/10 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg 
+                                            shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-white/10 
                                             dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20"
                         type="button"
                       >
@@ -51,7 +72,7 @@ const Header = () => {
                     <div className="fixed top-1 left-1 w-1 h-0 p-0 m-1 overflow:hidden"></div>
                     <nav className="pointer-events-auto hidden md:block">
                       <ul
-                        className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 
+                        className="flex rounded-full bg-white/10 px-3 text-sm font-medium text-zinc-200 
                         shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-white/10 
                         dark:text-zinc-200 dark:ring-white/10"
                       >
@@ -105,7 +126,7 @@ const Header = () => {
                   <div className="flex justify-end md:flex-1">
                     <div className="pointer-events-auto">
                       <button
-                        className="group rounded-full bg-white/90 px-3 py-2 shadow-lg 
+                        className="group rounded-full bg-white/10 px-3 py-2 shadow-lg 
                             shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition 
                             dark:bg-white/10 dark:ring-white/10 dark:hover:ring-white/20"
                       >
@@ -115,12 +136,8 @@ const Header = () => {
                           viewBox="0 0 24 24"
                           stroke-width="1.5"
                           stroke="currentColor"
-                          className="h-6 w-6 fill-zinc-100 stroke-zinc-500 transition 
-                            group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden 
-                            [@media(prefers-color-scheme:dark)]:fill-teal-50 
-                            [@media(prefers-color-scheme:dark)]:stroke-teal-500 
-                            [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 
-                            [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600"
+                          className="h-6 w-6 hover:text-textOrange transition 
+                          "
                         >
                           <path
                             stroke-linecap="round"
@@ -154,7 +171,9 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </header>
+    </div>
+    </nav>
+    
   );
 };
 
