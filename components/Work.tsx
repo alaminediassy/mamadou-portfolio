@@ -91,7 +91,7 @@ const Work = () => {
         href="#"
         className="inline-flex items-center gap-2 justify-center rounded-md 
       py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-white/5
-      font-medium text-gray-100 hover:bg-white/20 hover:ring-[0.2px] hover:ring-white/50 active:bg-zinc-100 active:text-zinc-900/60 
+      font-medium text-gray-100 hover:bg-white/5 hover:ring-[0.2px] hover:ring-white/50 active:bg-zinc-100 active:text-zinc-900/60 
        group mt-6 w-full hover:text-textOrange"
       >
         Download CV

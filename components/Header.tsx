@@ -1,30 +1,21 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Profile from "../public/assets/images/alamine_profile.png";
+import { useRouter } from "next/router";
 
 const Header = () => {
-  const [navbarBgColor, setNavbarBgColor] = useState('');
-  
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      if (scrollY > 100) {
-        setNavbarBgColor('bg-gray-800'); // Remplacez par la classe de couleur de fond souhaitée de Tailwind
-      } else {
-        setNavbarBgColor('');
-      }
-    };
-    
-    window.addEventListener('scroll', handleScroll);
-    
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
+  const router = useRouter();
+  const navigation = [
+    {name: 'Home', href: '/'},
+    {name: 'About', href: '/About'},
+    {name: 'Articles', href: '/Articles'},
+    {name: 'Projets', href: '/Projets'},
+    {name: 'Experience', href: '/Experience'},
+    {name: 'Contact', href: '/Contact'},
+  ]
   
   return (
-    <nav className={` ${navbarBgColor}`}>
+    <div>
       <div className="pointer-events-none relative z-50 flex flex-none flex-col">
       <div className="top-0 z-10 h-16 pt-6">
         <div className="sm:px-8 top-[var(--header-top,theme(spacing.6))] w-full">
@@ -39,17 +30,16 @@ const Header = () => {
                                         backdrop-blur dark:bg-zinc-800/90"
                     >
                       <a href="/" className="pointer-events-auto">
-                        <Image src={Profile} alt="logo" className="" />
+                        {/* <Image src={Profile} alt="logo" className="" /> */}
                       </a>
                     </div>
                   </div>
                   <div className="flex flex-1 justify-end md:justify-center">
                     <div className="pointer-events-auto md:hidden">
                       <button
-                        className="group flex items-center rounded-full 
-                                            bg-white/10 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg 
-                                            shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-white/10 
-                                            dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20"
+                        className="group flex items-center rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg 
+                      shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-white/10 
+                      dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20"
                         type="button"
                       >
                         Menu
@@ -172,7 +162,7 @@ const Header = () => {
         </div>
       </div>
     </div>
-    </nav>
+    </div>
     
   );
 };

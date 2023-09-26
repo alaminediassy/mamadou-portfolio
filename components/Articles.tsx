@@ -4,16 +4,33 @@ import PostImg from "../public/assets/images/alamine.jpeg";
 const article = [
   {
     id: 1,
-    title: "Boost your conversion rate",
+    title: "l'impact du numérique dans le milieu rural",
     href: "#",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit Dolorum, obcaecati! Accusantium quos laboriosam et id voluptas beatae odio",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
-    category: { title: "Marketing", href: "#" },
+    category: { title: "Numérique", href: "#" },
     author: {
-      name: "Michael Foster",
-      role: "Co-Founder / CTO",
+      name: "Mamadou Lamine",
+      role: "Web developer",
+      href: "#",
+      imageUrl:
+        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+  },
+  {
+    id: 1,
+    title: "L'intéligence artificielle en mileur scolaire",
+    href: "#",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit Dolorum, obcaecati! Accusantium quos laboriosam et id voluptas beatae odio",
+    date: "Mar 16, 2020",
+    datetime: "2020-03-16",
+    category: { title: "Intéligence artificielle", href: "#" },
+    author: {
+      name: "Mamadou DIASSY",
+      role: "CEO Nema Studio",
       href: "#",
       imageUrl:
         "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
@@ -24,24 +41,7 @@ const article = [
     title: "Boost your conversion rate",
     href: "#",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
-    category: { title: "Marketing", href: "#" },
-    author: {
-      name: "Michael Foster",
-      role: "Co-Founder / CTO",
-      href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-  {
-    id: 1,
-    title: "Boost your conversion rate",
-    href: "#",
-    description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit Dolorum, obcaecati! Accusantium quos laboriosam et id voluptas beatae odio",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
     category: { title: "Marketing", href: "#" },

@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Image from "next/image";
 import Almine from "../public/assets/images/alamine.jpeg";
 import Footer from "@/components/Footer";
+import about from "../content/js/content";
 
 import {
   SlSocialLinkedin,

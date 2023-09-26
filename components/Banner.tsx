@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Avatar from "../public/assets/images/alamine_profile.png"
+import Link from "next/link"
 
 const Banner = () => {
   return (
@@ -37,13 +38,13 @@ const Banner = () => {
         ">
             I am Mamadou Lamine DIASSY currently doing an internship in web development at intrepide Studio in Luxembourg.
             I have strong fundation in frontend & backend development and am skilled in creating best user experience.{" "}
-            <a href="https://github.com/alaminediassy" target="_blank">
+            <Link href="/About">
              <span className="text-textOrange inline-flex relative cursor-pointer h-7 overflow-x-hidden group ">
                 Learn more
                 <span className="absolute w-full h-[1px] bg-textOrange left-0 bottom-1 -translate-x-[110%] group-hover:translate-x-0
                 transition-transform duration-500"></span>
                 </span>
-            </a>
+            </Link>
         </motion.p>
         {/* <motion.button
         initial={{ y:10, opacity: 0}}

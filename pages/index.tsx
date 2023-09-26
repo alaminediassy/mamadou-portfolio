@@ -8,6 +8,8 @@ import About from "@/components/About";
 import Content from "@/components/Content";
 import Footer from "@/components/Footer";
 import InfiniteLooper from "@/components/InfiniteLooper";
+import Header from "@/components/Header";
+import Navbar1 from "@/components/Navbar1";
 
 export default function Home() {
   return (
@@ -18,7 +20,9 @@ export default function Home() {
     </Head>
     <main className='w-full h-screen font-bodyFont bg-bodyColor text-textLight overflow-x-hidden
     overflow-y-scroll'>
+      {/* <Header/> */}
       <Navbar/>
+      
       <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between ">
         <motion.div 
         initial={{ opacity: 0}}
@@ -32,12 +36,6 @@ export default function Home() {
           <InfiniteLooper/>
           <Content/>
           <Footer/>
-         
-          {/* Experiences */}
-          {/* Projects */}
-          {/* Archive */}
-          {/* Contact */}
-          {/* Footer */}
         </div>
         <motion.div 
         initial={{ opacity: 0}}
