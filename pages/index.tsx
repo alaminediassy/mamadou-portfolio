@@ -4,12 +4,9 @@ import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import { motion } from "framer-motion";
 import Banner from "@/components/Banner";
-import About from "@/components/About";
 import Content from "@/components/Content";
 import Footer from "@/components/Footer";
 import InfiniteLooper from "@/components/InfiniteLooper";
-import Header from "@/components/Header";
-import Navbar1 from "@/components/Navbar1";
 
 export default function Home() {
   return (

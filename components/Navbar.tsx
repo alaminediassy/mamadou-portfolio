@@ -83,7 +83,7 @@ const Navbar  =  () => {
                         </motion.li>
                     </Link>
                 </ul>
-                <a href="/assets/mamadou-resume.pdf" target='_blank'>
+                <Link href="/assets/mamadou-resume.pdf" target='_blank'>
                     <motion.button
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
@@ -92,7 +92,7 @@ const Navbar  =  () => {
                     >
                         Resume
                     </motion.button>
-                </a>
+                </Link>
             </div>
             {/* small icon section */}
             <div className='w-6 h-5 flex flex-col justify-between items-center mdl:hidden text-4xl text-textOrange cursor-pointer overflow-hidden group'>

@@ -1,6 +1,3 @@
-import { useState, useEffect } from "react";
-import Image from "next/image";
-import Profile from "../public/assets/images/alamine_profile.png";
 import { useRouter } from "next/router";
 
 const Header = () => {
