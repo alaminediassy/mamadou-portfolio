@@ -12,6 +12,7 @@ import {
 import {BsGithub} from "react-icons/bs";
 import {FaLinkedin} from "react-icons/fa";
 import {MdEmail} from "react-icons/md";
+import Link from "next/link";
 
 
 const About = () => {
@@ -40,47 +41,28 @@ const About = () => {
                   </div>
                   <div className="lg:order-first lg:row-span-2">
                     <h1 className="text-3xl font-bold tracking-tight  text-textLight dark:text-textLight sm:text-5xl">
-                      I'm Mamadou Lamine DIASSY. I live in Paris, i'm intern in
-                      web developer.
+                     Mamadou Lamine DIASSY I live in Paris
                     </h1>
                     <div className="mt-6 space-y-7 text-base text-textSlow/80 text-justify ">
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolorum, obcaecati! Accusantium quos laboriosam et id
-                        voluptas beatae odio, aperiam numquam sint? Libero
-                        temporibus voluptates dignissimos. Saepe inventore
-                        minima harum eligendi.
+                      Mamadou Lamine DIASSY I live in Paris Mamadou Lamine DIASSY I live in Paris
                       </p>
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolorum, obcaecati! Accusantium quos laboriosam et id
-                        voluptas beatae odio, aperiam numquam sint? Libero
-                        temporibus voluptates dignissimos. Saepe inventore
-                        minima harum eligendi. Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit.
+                      Mamadou Lamine DIASSY I live in Paris Mamadou Lamine DIASSY I live in Paris
                       </p>
                       <p>
-                        I spent the next few summers indoors working on a rocket
-                        design, while I recovered from the multiple surgeries it
-                        took to fix my badly broken legs. It took nine
-                        iterations, but when I was 15 I sent my dad’s Blackberry
-                        into orbit and was able to transmit a photo back down to
-                        our family computer from space.
+                      Mamadou Lamine DIASSY I live in Paris Mamadou Lamine DIASSY I live in Paris
                       </p>
                       <p>
-                        Today, I’m the founder of Planetaria, where we’re
-                        working on civilian space suits and manned shuttle kits
-                        you can assemble at home so that the next generation of
-                        kids really can make it to orbit — from the comfort of
-                        their own backyards.
+                      Mamadou Lamine DIASSY I live in Paris Mamadou Lamine DIASSY I live in Paris
                       </p>
                     </div>
                   </div>
                   <div className="lg:pl-20">
                     <ul>
                       <li className="mt-4 flex">
-                        <a
-                          href=""
+                        <Link
+                          href="/"
                           className="group flex text-sm font-medium text-textSlow transition 
                         hover:text-textOrange dark:text-textSlow dark:hover:text-textOrange"
                         >
@@ -88,10 +70,10 @@ const About = () => {
                             <SlSocialTwitter />
                           </span>
                           <span className="ml-4">Follow on Twitter</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="mt-4 flex">
-                        <a
+                        <Link
                           href=""
                           className="group flex text-sm font-medium text-textSlow transition 
                         hover:text-textOrange dark:text-textSlow dark:hover:text-textOrange"
@@ -100,10 +82,10 @@ const About = () => {
                             <SlSocialInstagram />
                           </span>
                           <span className="ml-4">Follow on Instagram</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="mt-4 flex">
-                        <a
+                        <Link
                           href="https://www.linkedin.com/in/mamadou-lamine-diassy-0946b31a6/"
                           className="group flex text-sm font-medium text-textSlow transition 
                         hover:text-textOrange dark:text-textLight dark:hover:text-textOrange"
@@ -112,10 +94,10 @@ const About = () => {
                             <BsGithub />
                           </span>
                           <span className="ml-4">Follow on Github</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="mt-4 flex">
-                        <a
+                        <Link
                           href="https://www.linkedin.com/in/mamadou-lamine-diassy-0946b31a6/"
                           className="group flex text-sm font-medium text-textSlow transition 
                         hover:text-textOrange dark:text-textSlow dark:hover:text-textOrange"
@@ -124,16 +106,16 @@ const About = () => {
                             <FaLinkedin />
                           </span>
                           <span className="ml-4">Follow on Linkedin</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="mt-8 border-t border-textSlow/60 pt-8 dark:border-zinc-700/40 flex">
-                        <a href="mailto:diassy.alamine@gmail.com" className="group flex text-sm font-medium text-textSlow transition 
+                        <Link href="mailto:diassy.alamine@gmail.com" className="group flex text-sm font-medium text-textSlow transition 
                         hover:text-textOrange dark:text-textSlow dark:hover:text-textOrange">
                             <span className="h-6 w-6 text-xl flex-none fill-zinc-500 transition group-hover:fill-textOrange">
                                 <MdEmail/>
                             </span>
                             <span className="ml-4">diassy.alamine@gmail.com</span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>

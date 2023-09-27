@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useRouter } from "next/router";
 
 const Header = () => {
@@ -26,9 +27,9 @@ const Header = () => {
                                         shadow-lg shadow-zinc-800/5 
                                         backdrop-blur dark:bg-zinc-800/90"
                     >
-                      <a href="/" className="pointer-events-auto">
+                      <Link href="/" className="pointer-events-auto">
                         {/* <Image src={Profile} alt="logo" className="" /> */}
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="flex flex-1 justify-end md:justify-center">
