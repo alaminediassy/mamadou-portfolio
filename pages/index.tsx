@@ -30,8 +30,8 @@ export default function Home() {
         </motion.div>
         <div className="h-[88vh] w-full mx-auto p-4 ">
           <Banner/>
-          <Content/>
           <InfiniteLooper/>
+          <Content/>
           <Footer/>
         </div>
         <motion.div 
