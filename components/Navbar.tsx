@@ -141,9 +141,9 @@ const Navbar = () => {
             >
               <MdOutlineClose
                 onClick={() => setShowMenu(false)}
-                className="text-3xl text-textOrange cursor-pointer hover:text-textOrange/70 absolute right-4"
+                className="text-3xl mr-4 text-textOrange cursor-pointer hover:text-textOrange/70 absolute right-4"
               />
-              <div className="flex flex-col text-center gap-7">
+              <div className="flex flex-col text-center gap-7 pt-16">
                 <ul className="flex flex-col text-base gap-7">
                   <Link
                     href="#Home"
