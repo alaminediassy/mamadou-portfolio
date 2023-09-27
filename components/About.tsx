@@ -1,105 +1,132 @@
+import Header from "@/components/Header";
 import Image from "next/image";
-import SectionTitle from "./SectionTitle";
-import { AiFillThunderbolt } from "react-icons/ai";
+import Almine from "../public/assets/images/alamine.jpeg";
+import Footer from "@/components/Footer";
+
+import {
+  SlSocialLinkedin,
+  SlSocialFacebook,
+  SlSocialInstagram,
+  SlSocialTwitter,
+} from "react-icons/sl";
+import {BsGithub} from "react-icons/bs";
+import {FaLinkedin} from "react-icons/fa";
+import {MdEmail} from "react-icons/md";
+import Link from "next/link";
+
 
 const About = () => {
   return (
-    <section
-      id="about"
-      className="max-w-containerSmall mx-auto py-10f lgl:py-32 flex flex-col gap-8"
+    <div
+      className="relative flex flex-col w-full h-screen font-bodyFont bg-bodyColor text-textLight overflow-x-hidden
+    overflow-y-scroll"
     >
-      <SectionTitle title="About Me" titleNo="01" />
-      <div className="flex flex-col lgl:flex-row gap-16">
-        <div className="w-full lgl:w-2/3 text-base text-textdark font-medium flex flex-col gap-4">
-          <p>
-            Hello my name is Mamadou Lamine DAISY and I like to create modern
-            and attractive user interfaces. My interest in web development
-            started in 2016 when I decided to try editing wordpress themes from
-            scratch. Over time, this passion has become a daily reality for me.
-          </p>
-          <p>
-            Fast-forward to today, and I had the privilege of working at an
-            advertising agency, a start-up,{" "}
-            <span className="text-textOrange ">
-              &apos;a huge corporation, and a student-led design studio&apos;
-            </span>
-            . Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rem
-            accusantium fugiat veritatis, quidem repellat
-            <span className="text-textOrange ">
-              &apos;ab natus possimus? Sint, accusamus!&apos;
-            </span>
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
-            ullam eligendi dolorum nostrum possimus quos iusto magnam ut esse
-            recusandae.
-          </p>
+      <Header />
+      <main className="flex-auto">
+        <div className="sm:px-8 mt-16 sm:mt-32">
+          <div className="mx-auto w-full max-w-7xl lg:px-8">
+            <div className="relative px-4 sm:px-8 lg:px-12">
+              <div className="mx-auto max-w-2xl lg:max-w-5xl">
+                <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
+                  <div className="lg:pl-20">
+                    <div className="max-w-xs px-2.5 lg:max-w-none">
+                      <Image
+                        src={Almine}
+                        alt="me"
+                        className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-textSlow
+                        hover:translate-y-2 duration-300 transition-transform transform hover:scale-110"
+                      />
+                    </div>
 
-          <ul className="max-w-[450] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
-            <li className="flex items-center gap-2">
-              <span className="text-textOrange ">
-                <AiFillThunderbolt />
-              </span>
-              Javascript (ES6+)
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textOrange ">
-                <AiFillThunderbolt />
-              </span>
-              next js
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textOrange ">
-                <AiFillThunderbolt />
-              </span>
-              node js
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textOrange ">
-                <AiFillThunderbolt />
-              </span>
-              Node js
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textOrange ">
-                <AiFillThunderbolt />
-              </span>
-              Typescript
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textOrange ">
-                <AiFillThunderbolt />
-              </span>
-              Express
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textOrange ">
-                <AiFillThunderbolt />
-              </span>
-              MongoDb
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textOrange ">
-                <AiFillThunderbolt />
-              </span>
-              tailwind css
-            </li>
-          </ul>
-        </div>
-        <div className="w-full lgl:w-1/3 h-80 relative group">
-          <div className="absolute w-full h-80 -left-6 -top-6 rounded-lg ">
-            <div className="w-full h-full relative z-20 flex pl-6 lgl:pl-0">
-              <Image
-                src={require("@/public/assets/images/alamine.jpeg").default}
-                className="rounded-lg h-full object-cover"
-                alt="profilImg"
-              />
-              <div className="hidden lgl:inline-block absolute w-full h-80 bg-bodyColor/30 rounded-md top-0 left-0 group-hover:bg-transparent duration-300 "></div>
+                  </div>
+                  <div className="lg:order-first lg:row-span-2">
+                    <h1 className="text-3xl font-bold tracking-tight  text-textLight dark:text-textLight sm:text-5xl">
+                     Mamadou Lamine DIASSY I live in Paris
+                    </h1>
+                    <div className="mt-6 space-y-7 text-base text-textSlow/80 text-justify ">
+                      <p>
+                      Mamadou Lamine DIASSY I live in Paris Mamadou Lamine DIASSY I live in Paris
+                      </p>
+                      <p>
+                      Mamadou Lamine DIASSY I live in Paris Mamadou Lamine DIASSY I live in Paris
+                      </p>
+                      <p>
+                      Mamadou Lamine DIASSY I live in Paris Mamadou Lamine DIASSY I live in Paris
+                      </p>
+                      <p>
+                      Mamadou Lamine DIASSY I live in Paris Mamadou Lamine DIASSY I live in Paris
+                      </p>
+                    </div>
+                  </div>
+                  <div className="lg:pl-20">
+                    <ul>
+                      <li className="mt-4 flex">
+                        <Link
+                          href="/"
+                          className="group flex text-sm font-medium text-textSlow transition 
+                        hover:text-textOrange dark:text-textSlow dark:hover:text-textOrange"
+                        >
+                          <span className="h-6 w-6 text-xl flex-none fill-zinc-500 transition group-hover:fill-textOrange">
+                            <SlSocialTwitter />
+                          </span>
+                          <span className="ml-4">Follow on Twitter</span>
+                        </Link>
+                      </li>
+                      <li className="mt-4 flex">
+                        <Link
+                          href=""
+                          className="group flex text-sm font-medium text-textSlow transition 
+                        hover:text-textOrange dark:text-textSlow dark:hover:text-textOrange"
+                        >
+                          <span className="h-6 w-6 text-xl flex-none fill-zinc-500 transition group-hover:fill-textOrange">
+                            <SlSocialInstagram />
+                          </span>
+                          <span className="ml-4">Follow on Instagram</span>
+                        </Link>
+                      </li>
+                      <li className="mt-4 flex">
+                        <Link
+                          href="https://www.linkedin.com/in/mamadou-lamine-diassy-0946b31a6/"
+                          className="group flex text-sm font-medium text-textSlow transition 
+                        hover:text-textOrange dark:text-textLight dark:hover:text-textOrange"
+                        >
+                          <span className="h-6 w-6 text-xl flex-none fill-zinc-500 transition group-hover:fill-textOrange">
+                            <BsGithub />
+                          </span>
+                          <span className="ml-4">Follow on Github</span>
+                        </Link>
+                      </li>
+                      <li className="mt-4 flex">
+                        <Link
+                          href="https://www.linkedin.com/in/mamadou-lamine-diassy-0946b31a6/"
+                          className="group flex text-sm font-medium text-textSlow transition 
+                        hover:text-textOrange dark:text-textSlow dark:hover:text-textOrange"
+                        >
+                          <span className="h-6 w-6 text-xl flex-none fill-zinc-500 transition group-hover:fill-textOrange">
+                            <FaLinkedin />
+                          </span>
+                          <span className="ml-4">Follow on Linkedin</span>
+                        </Link>
+                      </li>
+                      <li className="mt-8 border-t border-textSlow/60 pt-8 dark:border-zinc-700/40 flex">
+                        <Link href="mailto:diassy.alamine@gmail.com" className="group flex text-sm font-medium text-textSlow transition 
+                        hover:text-textOrange dark:text-textSlow dark:hover:text-textOrange">
+                            <span className="h-6 w-6 text-xl flex-none fill-zinc-500 transition group-hover:fill-textOrange">
+                                <MdEmail/>
+                            </span>
+                            <span className="ml-4">diassy.alamine@gmail.com</span>
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </main>
+      <Footer/>
+    </div>
   );
 };
 
