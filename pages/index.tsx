@@ -3,7 +3,6 @@ import Head from "next/head";
 import { motion } from "framer-motion";
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
-import InfiniteLooper from "@/components/InfiniteLooper";
 import Content from "@/components/Content";
 
 export default function Home() {
@@ -27,7 +26,6 @@ export default function Home() {
         </motion.div>
         <div className="h-[88vh] w-full mx-auto p-4 ">
           <Banner/>
-          <InfiniteLooper/>
           <Content/>
           <Footer/>
         </div>
