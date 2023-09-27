@@ -2,7 +2,6 @@ import Header from "@/components/Header";
 import Image from "next/image";
 import Almine from "../public/assets/images/alamine.jpeg";
 import Footer from "@/components/Footer";
-import about from "../content/js/content";
 
 import {
   SlSocialLinkedin,
@@ -105,7 +104,7 @@ const About = () => {
                       </li>
                       <li className="mt-4 flex">
                         <a
-                          href=""
+                          href="https://www.linkedin.com/in/mamadou-lamine-diassy-0946b31a6/"
                           className="group flex text-sm font-medium text-textSlow transition 
                         hover:text-textOrange dark:text-textLight dark:hover:text-textOrange"
                         >
@@ -117,7 +116,7 @@ const About = () => {
                       </li>
                       <li className="mt-4 flex">
                         <a
-                          href=""
+                          href="https://www.linkedin.com/in/mamadou-lamine-diassy-0946b31a6/"
                           className="group flex text-sm font-medium text-textSlow transition 
                         hover:text-textOrange dark:text-textSlow dark:hover:text-textOrange"
                         >

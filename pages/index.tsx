@@ -4,7 +4,6 @@ import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import { motion } from "framer-motion";
 import Banner from "@/components/Banner";
-import Content from "@/components/Content";
 import Footer from "@/components/Footer";
 import InfiniteLooper from "@/components/InfiniteLooper";
 
