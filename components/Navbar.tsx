@@ -36,7 +36,7 @@ const Navbar = () => {
         <div className="hidden mdl:inline-flex items-center gap-7">
           <ul className="flex text-[13px] gap-7">
             <Link
-              href="#Home"
+              href="/"
               className="flex items-center gap-1 font-medium text-textdark hover:text-textOrange
                     cursor-pointer duration-300 nav-link"
             >
@@ -108,7 +108,7 @@ const Navbar = () => {
               transition={{ delay: 0.5 }}
               className="px-4 py-2 rounded-md text-textOrange text-[13px] border border-textOrange hover:bg-hoverColor duration-300"
             >
-              Resume
+              Download CV
             </motion.button>
           </Link>
         </div>
@@ -146,7 +146,7 @@ const Navbar = () => {
               <div className="flex flex-col text-center gap-7 pt-16">
                 <ul className="flex flex-col text-base gap-7">
                   <Link
-                    href="#Home"
+                    href="/"
                     className="flex items-center gap-1 font-medium text-textdark hover:text-textOrange
                     cursor-pointer duration-300 nav-link"
                   >
@@ -159,7 +159,7 @@ const Navbar = () => {
                     </motion.li>
                   </Link>
                   <Link
-                    href="/"
+                    href="/About"
                     className="flex items-center gap-1 font-medium text-textDark hover:text-textOrange cursor-pointer
                     duration-300 nav-link"
                   >
@@ -218,7 +218,7 @@ const Navbar = () => {
                     transition={{ delay: 0.6, ease: "easeIn" }}
                     className="w-32 h-10 rounded-md text-textOrange text-[13px] border border-textOrange hover:bg-hoverColor duration-300"
                   >
-                    Resume
+                    Download CV
                   </motion.button>
                 </a>
                 <div className="flex gap-4">
