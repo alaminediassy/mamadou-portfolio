@@ -17,6 +17,7 @@ export default function Home() {
       <Navbar/>
       
       <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between ">
+        
         <motion.div 
         initial={{ opacity: 0}}
         animate={{ opacity: 1}}
@@ -41,3 +42,9 @@ export default function Home() {
     </>
   )
 }
+
+
+
+
+      
+      

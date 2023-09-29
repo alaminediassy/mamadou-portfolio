@@ -31,7 +31,9 @@ const Navbar = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          {/* <Image className='w-14' src={logo} alt='logo'/> */}
+          <Link href="/">
+            <Image className='w-11' src={logo} alt='logo'/>
+          </Link>
         </motion.div>
         <div className="hidden mdl:inline-flex items-center gap-7">
           <ul className="flex text-[13px] gap-7">
@@ -58,7 +60,7 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1 }}
               >
-                <span className="text-textOrange">01.</span> About
+                {/* <span className="text-textOrange">01.</span>  */}About
               </motion.li>
             </Link>
             <Link
@@ -71,7 +73,7 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1, delay: 0.2 }}
               >
-                <span className="text-textOrange">02.</span> Experience
+                {/* <span className="text-textOrange">02.</span> */} Experience
               </motion.li>
             </Link>
             <Link
@@ -84,11 +86,11 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1, delay: 0.3 }}
               >
-                <span className="text-textOrange">03.</span> Projects
+                {/* <span className="text-textOrange">03.</span> */} Projects
               </motion.li>
             </Link>
             <Link
-              href="#Contact"
+              href="/Contact"
               className="flex items-center gap-1 font-medium text-textDark hover:text-textOrange cursor-pointer
                     duration-300 nav-link"
             >
@@ -97,7 +99,7 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1, delay: 0.4 }}
               >
-                <span className="text-textOrange">04.</span> Contact
+                {/* <span className="text-textOrange">04.</span> */} Contact
               </motion.li>
             </Link>
           </ul>
@@ -198,7 +200,7 @@ const Navbar = () => {
                     </motion.li>
                   </Link>
                   <Link
-                    href="/"
+                    href="/Contact"
                     className="flex items-center gap-1 font-medium text-textDark hover:text-textOrange cursor-pointer
                     duration-300 nav-link"
                   >

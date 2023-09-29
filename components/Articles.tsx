@@ -1,22 +1,23 @@
 import Image from "next/image";
 import PostImg from "../public/assets/images/alamine.jpeg";
+import Link from "next/link";
 
 const article = [
   {
     id: 1,
-    title: "l'impact du numérique dans le milieu rural",
+    title: "La Blockchain au Sénégal",
     href: "#",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit Dolorum, obcaecati! Accusantium quos laboriosam et id voluptas beatae odio",
-    date: "Mar 16, 2020",
+      "Un potentiel inexploité pour les organisations gouvernementales et les entreprises.",
+    date: "Lun 12 Juin 2023 ",
     datetime: "2020-03-16",
     category: { title: "Numérique", href: "#" },
     author: {
       name: "Mamadou Lamine",
       role: "Web developer",
-      href: "#",
+      href: "https://smart-thinking.sn/2023/06/12/la-blockchain-au-senegal/",
       imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        "https://smart-thinking.sn/2023/06/12/la-blockchain-au-senegal/",
     },
   },
   {
@@ -67,26 +68,26 @@ const Articles = () => {
             <time dateTime={post?.datetime} className="text-textdark">
               {post.date}
             </time>
-            <a
+            <Link
               href={post?.category?.href}
               className="relative z-10 rounded-full bg-white/5 px-3 py-1.5 font-medium text-white/90 hover:text-textOrange"
             >
               {post?.category?.title}
-            </a>
+            </Link>
           </div>
           <div className="group relative">
             <h3 className="mt-3 text-lg  leading-6 text-bodyText font-semibold">
-              <a href={post?.href}>
+              <Link href={post?.href}>
                 <span className="absolute inset-0" />
                 {post?.title}
-              </a>
+              </Link>
             </h3>
             <p className="mt-5 line-clamp-3 text-sm leading-6 text-textLight">
               {post?.description}
             </p>
           </div>
           <div className="relative z-10 mt-4 flex items-center text-sm font-medium text-textOrange">
-            <a href="#" className="cursor-pointer">read more</a>
+            <Link href={post.author.href} target="_blank" className="cursor-pointer">read more</Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

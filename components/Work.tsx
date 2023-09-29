@@ -18,7 +18,7 @@ const workData = [
   {
     id: 2,
     company: "Samsic Event's",
-    role: "welocome and information officer",
+    role: "welcome and information officer",
     startTime: "Jan 2023",
     endTime: "July 2023",
     image: Samsic,
