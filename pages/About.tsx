@@ -9,12 +9,11 @@ import {
   SlSocialInstagram,
   SlSocialTwitter,
 } from "react-icons/sl";
-import {BsGithub} from "react-icons/bs";
-import {FaLinkedin} from "react-icons/fa";
-import {MdEmail} from "react-icons/md";
+import { BsGithub } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-
 
 const About = () => {
   return (
@@ -40,21 +39,44 @@ const About = () => {
                     </div>
                   </div>
                   <div className="lg:order-first lg:row-span-2">
-                    <h1 className="text-3xl font-bold tracking-tight  text-textLight dark:text-textLight sm:text-5xl">
-                     Mamadou Lamine DIASSY I live in Paris
+                    <span className="text-xl">Hello, je m&apos;appelle</span>
+                    <h1 className="text-3xl pt-6 font-bold tracking-tight  text-textLight dark:text-textLight sm:text-5xl">
+                      Mamadou Lamine DIASSY
                     </h1>
                     <div className="mt-6 space-y-7 text-base text-textSlow/80 text-justify ">
                       <p>
-                      Mamadou Lamine DIASSY I live in Paris Mamadou Lamine DIASSY I live in Paris
+                        je suis un passionné du monde de l&apos;informatique,
+                        particulièrement du développement web. Mon
+                        parcoursacadémique a été façonné par ma quête constante
+                        de maîtriser les compétences nécessaires pour exceller
+                        dans ce domaine dynamique et en constante évolution.
                       </p>
                       <p>
-                      Mamadou Lamine DIASSY I live in Paris Mamadou Lamine DIASSY I live in Paris
+                        J&apos;ai obtenu ma Licence en Mathématiques Appliquées et
+                        Informatiques, où j&apos;ai acquis une solide base en
+                        algorithmes, en résolution de problèmes complexes et en
+                        logique mathématique. Cette fondation m&apos;a permis de
+                        comprendre les principes sous-jacents du développement
+                        logiciel de manière approfondie.
                       </p>
                       <p>
-                      Mamadou Lamine DIASSY I live in Paris Mamadou Lamine DIASSY I live in Paris
+                        Par la suite, j&apos;ai complété mon Bachelor en Responsable
+                        de Projet Informatique avec une spécialité en
+                        développement web. C&apos;est là que j&apos;ai découvert ma
+                        passion pour la création de solutions web interactives
+                        et conviviales. J&apos;ai appris à travailler en équipe, à
+                        gérer des projets et à aligner les objectifs techniques
+                        sur les besoins des utilisateurs finaux.
                       </p>
                       <p>
-                      Mamadou Lamine DIASSY I live in Paris Mamadou Lamine DIASSY I live in Paris
+                        Actuellement, je suis en train de rédiger mon mémoire
+                        pour mon Master en Ingénierie Logicielle, où je me
+                        plonge dans des sujets avancés liés à la conception
+                        logicielle, à l&apos;optimisation des performances et à la
+                        sécurité des applications. Simultanément, je poursuis un
+                        Master en Développement et Validation Logicielle, ce qui
+                        me permet d&apos;explorer de nouvelles perspectives et
+                        d&apos;acquérir des compétences complémentaires.
                       </p>
                     </div>
                   </div>
@@ -109,12 +131,15 @@ const About = () => {
                         </Link>
                       </li>
                       <li className="mt-8 border-t border-textSlow/60 pt-8 dark:border-zinc-700/40 flex">
-                        <Link href="mailto:diassy.alamine@gmail.com" className="group flex text-sm font-medium text-textSlow transition 
-                        hover:text-textOrange dark:text-textSlow dark:hover:text-textOrange">
-                            <span className="h-6 w-6 text-xl flex-none fill-zinc-500 transition group-hover:fill-textOrange">
-                                <MdEmail/>
-                            </span>
-                            <span className="ml-4">diassy.alamine@gmail.com</span>
+                        <Link
+                          href="mailto:diassy.alamine@gmail.com"
+                          className="group flex text-sm font-medium text-textSlow transition 
+                        hover:text-textOrange dark:text-textSlow dark:hover:text-textOrange"
+                        >
+                          <span className="h-6 w-6 text-xl flex-none fill-zinc-500 transition group-hover:fill-textOrange">
+                            <MdEmail />
+                          </span>
+                          <span className="ml-4">diassy.alamine@gmail.com</span>
                         </Link>
                       </li>
                     </ul>
@@ -125,7 +150,7 @@ const About = () => {
           </div>
         </div>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

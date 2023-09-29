@@ -1,5 +1,10 @@
 import Image from "next/image";
 import Intrepide from "../public/assets/images/intrepide.jpeg";
+import Maarif from "../public/assets/images/maarif.jpg";
+import Samsic from "../public/assets/images/samsic.svg";
+import BabiAlem from "../public/assets/images/babialem.svg";
+
+import Link from "next/link";
 
 const workData = [
   {
@@ -12,27 +17,27 @@ const workData = [
   },
   {
     id: 2,
-    company: "Intrepide Studio",
-    role: "intern in web development",
-    startTime: "Août 2023",
-    endTime: "Present",
-    image: Intrepide,
+    company: "Samsic Event's",
+    role: "welocome and information officer",
+    startTime: "Jan 2023",
+    endTime: "July 2023",
+    image: Samsic,
   },
   {
     id: 3,
-    company: "Intrepide Studio",
-    role: "intern in web development",
-    startTime: "Août 2023",
-    endTime: "Present",
-    image: Intrepide,
+    company: "Babi Alem",
+    role: "Web and Graphic Designer",
+    startTime: "Feb 2021",
+    endTime: "June 2022",
+    image: BabiAlem,
   },
   {
     id: 4,
-    company: "Intrepide Studio",
-    role: "intern in web development",
-    startTime: "Août 2023",
-    endTime: "Present",
-    image: Intrepide,
+    company: "Maarif Fundation",
+    role: "Vacant IT Teacher",
+    startTime: "March 2019",
+    endTime: "Jan 2020",
+    image: Maarif,
   },
 ];
 
@@ -87,8 +92,8 @@ const Work = () => {
           </li>
         ))}
       </ol>
-      <a
-        href="#"
+      <Link
+        href="/assets/mamadou-resume.pdf" target="_blank"
         className="inline-flex items-center gap-2 justify-center rounded-md 
       py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-white/5
       font-medium text-gray-100 hover:bg-white/5 hover:ring-[0.2px] hover:ring-white/50 active:bg-zinc-100 active:text-zinc-900/60 
@@ -109,7 +114,7 @@ const Work = () => {
             d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3"
           />
         </svg>
-      </a>
+      </Link>
     </div>
   );
 };
