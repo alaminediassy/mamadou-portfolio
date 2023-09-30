@@ -26,7 +26,7 @@ const EmailSection = () => {
                     type="email"
                     id="email"
                     required
-                    className="bg-white/5 border w-full mt-2 border-white/10 rounded-xl pl-6 text-sm pt-2.5 pb-2.5"
+                    className="bg-white/5 border w-full mt-2  border-white/10 focus:outline-none focus:border-textOrange focus:ring-1/2 focus:ring-textOrange rounded-xl pl-6 text-sm pt-2.5 pb-2.5"
                     placeholder="mamadou@google.com" />
                   </div>
                   <div className="mb-6">
@@ -35,7 +35,7 @@ const EmailSection = () => {
                     type="text"
                     id="subject"
                     required
-                    className="bg-white/5 border w-full mt-2 border-white/10 rounded-xl pl-6 text-sm pt-2.5 pb-2.5"
+                    className="bg-white/5 border w-full mt-2 border-white/10 rounded-xl pl-6 text-sm pt-2.5 pb-2.5 focus:outline-none focus:border-textOrange focus:ring-1/2 focus:ring-textOrange"
                     placeholder="Just saying hi" />
                   </div>
                   <div className="mb-6">
@@ -43,7 +43,7 @@ const EmailSection = () => {
                     className="text-white block text-sm mb-2 font-medium">Message</label>
                     <textarea name="message" id="message"
                     placeholder="Lets telk about"
-                    className="bg-white/5 border h-[200px] w-full mt-2 border-white/10 rounded-xl pl-6 text-sm pt-2.5 pb-2.5"></textarea>
+                    className="bg-white/5 border h-[200px] w-full mt-2 border-white/10 rounded-xl pl-6 text-sm pt-2.5 pb-2.5 focus:outline-none focus:border-textOrange focus:ring-1/2 focus:ring-textOrange"></textarea>
                   </div>
                   <button className="bg-textOrange/90 px-5 text-white w-full rounded-xl p-2.5 hover:bg-textOrange">Send message</button>
           </form>

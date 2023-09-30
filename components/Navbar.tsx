@@ -11,6 +11,7 @@ import {
 } from "react-icons/sl";
 import { TbBrandGithub } from "react-icons/tb";
 import { SlSocialYoutube } from "react-icons/sl";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const ref = useRef<string | any>("");
@@ -22,6 +23,7 @@ const Navbar = () => {
         setShowMenu(false)
     }
   }
+  const router = useRouter();
 
   return (
     <div className="w-full shadow-navbarShadow h-20 lg:h-[12vh] sticky top-0 z-50 bg-bodyColor px-4">
@@ -39,8 +41,9 @@ const Navbar = () => {
           <ul className="flex text-[13px] gap-7">
             <Link
               href="/"
-              className="flex items-center gap-1 font-medium text-textdark hover:text-textOrange
-                    cursor-pointer duration-300 nav-link"
+              className={`flex items-center gap-1 font-medium hover:text-textOrange cursor-pointer duration-300 ${router.asPath === '/' ? 'text-textOrange' : 'text-textLight'}`}
+
+              
             >
               <motion.li
                 initial={{ y: -10, opacity: 0 }}
@@ -52,8 +55,7 @@ const Navbar = () => {
             </Link>
             <Link
               href="/About"
-              className="flex items-center gap-1 font-medium text-textDark hover:text-textOrange cursor-pointer
-                    duration-300 nav-link"
+              className={`flex items-center gap-1 font-medium hover:text-textOrange cursor-pointer duration-300 nav-link ${router.asPath === '/About' ? 'text-textOrange' : 'text-textLight'}`}
             >
               <motion.li
                 initial={{ y: -10, opacity: 0 }}
@@ -64,9 +66,8 @@ const Navbar = () => {
               </motion.li>
             </Link>
             <Link
-              href="/Experience"
-              className="flex items-center gap-1 font-medium text-textDark hover:text-textOrange cursor-pointer
-                    duration-300 nav-link"
+              href="#Experience"
+              className={`flex items-center gap-1 font-medium text-textDark hover:text-textOrange cursor-pointer duration-300 nav-link ${router.asPath === '/Experience' ? 'text-textOrange' : 'text-textLight'}`}
             >
               <motion.li
                 initial={{ y: -10, opacity: 0 }}
@@ -77,9 +78,8 @@ const Navbar = () => {
               </motion.li>
             </Link>
             <Link
-              href="/Project"
-              className="flex items-center gap-1 font-medium text-textDark hover:text-textOrange cursor-pointer
-                    duration-300 nav-link"
+              href="#Project"
+              className={`flex items-center gap-1 font-medium text-textDark hover:text-textOrange cursor-pointer duration-300 nav-link ${router.asPath === '/Project' ? 'text-textOrange' : 'text-textLight'}`}
             >
               <motion.li
                 initial={{ y: -10, opacity: 0 }}
@@ -91,8 +91,7 @@ const Navbar = () => {
             </Link>
             <Link
               href="/Contact"
-              className="flex items-center gap-1 font-medium text-textDark hover:text-textOrange cursor-pointer
-                    duration-300 nav-link"
+              className={`flex items-center gap-1 font-medium text-textDark hover:text-textOrange cursor-pointer duration-300 nav-link ${router.asPath === '/Contact' ? 'text-textOrange' : 'text-textLight'}`}
             >
               <motion.li
                 initial={{ y: -10, opacity: 0 }}
