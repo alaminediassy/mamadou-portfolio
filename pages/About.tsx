@@ -39,7 +39,7 @@ const About = () => {
                     </div>
                   </div>
                   <div className="lg:order-first lg:row-span-2">
-                    <span className="text-xl">Hello, je m&apos;appelle</span>
+                    <span className="text-xl">Salut, je m&apos;appelle</span>
                     <h1 className="text-3xl pt-6 font-bold tracking-tight  text-textLight dark:text-textLight sm:text-5xl">
                       Mamadou Lamine DIASSY
                     </h1>
@@ -84,7 +84,7 @@ const About = () => {
                     <ul>
                       <li className="mt-4 flex">
                         <Link
-                          href="/"
+                          href="https://twitter.com/diassy_al_amine"
                           className="group flex text-sm font-medium text-textSlow transition 
                         hover:text-textOrange dark:text-textSlow dark:hover:text-textOrange"
                         >
@@ -96,7 +96,7 @@ const About = () => {
                       </li>
                       <li className="mt-4 flex">
                         <Link
-                          href=""
+                          href="https://instagram.com/lamiinediassy?igshid=OGQ5ZDc2ODk2ZA=="
                           className="group flex text-sm font-medium text-textSlow transition 
                         hover:text-textOrange dark:text-textSlow dark:hover:text-textOrange"
                         >
@@ -108,7 +108,7 @@ const About = () => {
                       </li>
                       <li className="mt-4 flex">
                         <Link
-                          href="https://www.linkedin.com/in/mamadou-lamine-diassy-0946b31a6/"
+                          href="https://github.com/alaminediassy"
                           className="group flex text-sm font-medium text-textSlow transition 
                         hover:text-textOrange dark:text-textLight dark:hover:text-textOrange"
                         >
