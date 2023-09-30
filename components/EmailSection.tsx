@@ -26,15 +26,15 @@ const EmailSection = () => {
         </div>
         <div>
           <form action="" className="flex flex-col">
-                  <div className="mb-6 flex justify-between gap-3">
-                    <div className="w-full">
+                  <div className="grid mb-6 gap-3 xl:grid-cols-2">
+                    <div className="">
                       <label htmlFor="name" typeof="text" className="text-textdark block text-sm font-medium">Your Name *</label>
                       <input
                       type="text"
                       id="name"
                       required
                       className="bg-white/5 border w-full mt-2  border-white/10 focus:outline-none focus:border-textOrange focus:ring-1/2 focus:ring-textOrange rounded-xl pl-6 text-sm pt-2.5 pb-2.5"
-                      placeholder="Mamadou Lamine" />
+                      placeholder="Mamadou" />
                     </div>
                     <div className="w-full">
                       <label htmlFor="email" typeof="email" className="text-textdark block text-sm font-medium">Your email *</label>
