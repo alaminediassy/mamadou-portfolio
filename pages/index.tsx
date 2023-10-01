@@ -5,6 +5,7 @@ import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 import Content from "@/components/Content";
 import Background from "@/components/Background";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         </motion.div>
         <div className="h-[88vh] w-full mx-auto p-4 ">
           <Banner/>
+          <Skills/>
           <Content/>
           <Footer/>
         </div>

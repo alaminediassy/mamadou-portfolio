@@ -229,7 +229,7 @@ const Navbar = () => {
                       <TbBrandGithub />
                     </span>
                   </a>
-                  <motion.a
+                  {/* <motion.a
                     href="https://github.com/alaminediassy"
                     target="_blank"
                   >
@@ -239,7 +239,7 @@ const Navbar = () => {
                     >
                       <SlSocialYoutube />
                     </span>
-                  </motion.a>
+                  </motion.a> */}
                   <motion.a
                     href="https://www.linkedin.com/in/mamadou-lamine-diassy-0946b31a6/"
                     target="_blank"

@@ -50,7 +50,7 @@ const Banner = () => {
         className="text-base md:max-w-[900px] text-textdark font-medium
         ">
             I am Mamadou Lamine DIASSY currently doing an internship in web development at intrepide Studio in Luxembourg.
-            I have strong fundation in frontend & backend development and am skilled in creating best user experience.{" "}
+            Beside having a strong foundation in frontend & backend development, I&apos;m highly skilled in leveraging the best user experience possible.{" "}
             <Link href="/About">
              <span className="text-textOrange inline-flex relative cursor-pointer h-7 overflow-x-hidden group ">
                 Learn more

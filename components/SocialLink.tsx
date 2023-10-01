@@ -25,7 +25,7 @@ const SocialLink = () => {
                   <TbBrandGithub />
                 </span>
               </motion.a>
-              <motion.a href="https://github.com/alaminediassy"
+              {/* <motion.a href="https://github.com/alaminediassy"
                 target="_blank"
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -37,7 +37,7 @@ const SocialLink = () => {
                 >
                   <SlSocialYoutube />
                 </span>
-              </motion.a>
+              </motion.a> */}
               <motion.a
                 href="https://www.linkedin.com/in/mamadou-lamine-diassy-0946b31a6/"
                 target="_blank"
