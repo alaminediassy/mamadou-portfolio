@@ -136,7 +136,8 @@ const skillBack = [
 
 const Skills = () => {
   return (
-    <div className='max-w-contentContainer  mx-auto py-4 mdl:py-16 flex flex-col gap-4 lgl:gap-8 mdl:px-10 xl:px-4'>
+    <section id='skills'>
+        <div className='max-w-contentContainer  mx-auto py-4 mdl:py-28 flex flex-col gap-4 lgl:gap-8 mdl:px-10 xl:px-4'>
         <div className='text-center text-textLight pb-2'>
           <h1 className='text-3xl font-bold'>Skills</h1>
           <p>Here are some of the technologies I&apos;m currently engaged in.</p>
@@ -174,7 +175,9 @@ const Skills = () => {
           </div>
         </div>
         
-    </div>
+      </div>
+    </section>
+    
   )
 }
 

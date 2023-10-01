@@ -2,6 +2,7 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import Avatar from "../public/assets/images/alamine_profile.png"
 import Link from "next/link"
+import SocialLink from "./SocialLink"
 
 const Banner = () => {
   return (
@@ -59,13 +60,17 @@ const Banner = () => {
                 </span>
             </Link>
         </motion.p>
-        {/* <motion.button
-        initial={{ y:10, opacity: 0}}
-        animate={{ y: 0, opacity: 1}}
-        transition={{duration: 0.5, delay: 0.9}}
-        className="w-52 h-14 text-sm font-titleFont border border-textOrange rounded-md text-textOrange tracking-wide hover:bg-hoverColor duration-300">
-            Check out my project !
-        </motion.button> */}
+        <Link href="/assets/mamadou-resume.pdf" target="_blank">
+            <motion.button
+            initial={{ y:10, opacity: 0}}
+            animate={{ y: 0, opacity: 1}}
+            transition={{duration: 0.5, delay: 0.9}}
+            className="w-52 h-14 text-sm font-titleFont border border-textOrange rounded-md text-textOrange tracking-wide hover:bg-hoverColor duration-300">
+                Download my CV
+            </motion.button>
+            
+        </Link>
+        <SocialLink/>
     </section>
   )
 }

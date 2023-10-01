@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import Content from "@/components/Content";
 import Background from "@/components/Background";
 import Skills from "@/components/Skills";
+import RightSide from "@/components/RightSide"
 
 export default function Home() {
   return (
@@ -38,7 +39,7 @@ export default function Home() {
         animate={{ opacity: 1}}
         transition={{ delay: 1.5 }}
         className="hidden xl:inline-flex w-32 h-full fixed right-0 bottom-0">
-          {/* <RightSide/> */}
+           <RightSide/>
         </motion.div>
       </div> 
     </main>

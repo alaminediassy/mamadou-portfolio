@@ -99,8 +99,20 @@ const Navbar = () => {
                 {/* <span className="text-textOrange">04.</span> */} Contact
               </motion.li>
             </Link>
+            <Link
+              href="#skills"
+              className={`flex items-center gap-1 font-medium text-textDark hover:text-textOrange cursor-pointer duration-300 nav-link ${router.asPath === '/Contact' ? 'text-textOrange' : 'text-textLight'}`}
+            >
+              <motion.li
+                initial={{ y: -10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.1, delay: 0.5 }}
+              >
+                {/* <span className="text-textOrange">04.</span> */} Skills
+              </motion.li>
+            </Link>
           </ul>
-          <Link href="/assets/mamadou-resume.pdf" target="_blank">
+          {/* <Link href="/assets/mamadou-resume.pdf" target="_blank">
             <motion.button
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -109,7 +121,7 @@ const Navbar = () => {
             >
               Download CV
             </motion.button>
-          </Link>
+          </Link> */}
         </div>
         {/* small icon section */}
         <div
