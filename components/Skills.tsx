@@ -22,7 +22,18 @@ import wordpress from '../public/assets/images/back/wordpress.png'
 import mysql from '../public/assets/images/back/mysql.png'
 import mongodb from '../public/assets/images/back/mongodb.png'
 import docker from '../public/assets/images/back/docker.png'
-
+// UI-UX Design icons
+import figma from '../public/assets/images/uiuxdesign/figma.png'
+import axd from '../public/assets/images/uiuxdesign/adobexd.png'
+import illustrator from '../public/assets/images/uiuxdesign/illustrator.png'
+import photoshop from '../public/assets/images/uiuxdesign/photoshop.png'
+import indesign from '../public/assets/images/uiuxdesign/indesign.png'
+// Others icons
+import github from '../public/assets/images/others/github.png'
+import gitlab from '../public/assets/images/others/gitlab.png'
+import postman from '../public/assets/images/others/postman.png'
+import intellij from '../public/assets/images/others/intellij.png'
+import vscode from '../public/assets/images/others/vscode.png'
 
 
 
@@ -132,7 +143,61 @@ const skillBack = [
   },
 ]
 
+const skilUIUX = [
+  {
+    id: 1,
+    programName: "Figma",
+    image: figma,
+  },
+  {
+    id: 2,
+    programName: "Adobe xd",
+    image: axd,
+  },
+  {
+    id: 3,
+    programName: "Illustrator",
+    image: illustrator,
+  },
+  {
+    id: 4,
+    programName: "Photoshop",
+    image: photoshop,
+  },
+  {
+    id: 5,
+    programName: "Indesign",
+    image: indesign,
+  },
+]
 
+const others = [
+  {
+    id: 1,
+    programName: "Github",
+    image: github,
+  },
+  {
+    id: 2,
+    programName: "Gitlab",
+    image: gitlab,
+  },
+  {
+    id: 3,
+    programName: "Postman",
+    image: postman,
+  },
+  {
+    id: 4,
+    programName: "Intellij",
+    image: intellij,
+  },
+  {
+    id: 5,
+    programName: "Vscode",
+    image: vscode,
+  },
+]
 
 const Skills = () => {
   return (
@@ -143,6 +208,7 @@ const Skills = () => {
           <p>Here are some of the technologies I&apos;m currently engaged in.</p>
         </div>
         <div className='grid grid-cols-1 gap-8 md:grid-cols-2'>
+         {/*  Frontend skills */}
           <div className='bg-black/5 rounded-2xl p-6 text-xl text-center ring-1 ring-white/20 drop-shadow-xl'>
             <h3 className='font-semibold text-2xl text-textLight pb-4'>Frontend</h3>
             <div className='flex flex-wrap gap-3 pr-4 pl-4 justify-center'>
@@ -154,15 +220,46 @@ const Skills = () => {
                   <p> {skill.programName} </p>
                 </div>
               ))}
- 
             </div>
           </div>
           
-          
+          {/* Backend skills */}
           <div className='bg-black/5 rounded-2xl p-6 text-xl text-center ring-1 ring-white/20 drop-shadow-xl'>
             <h3 className='font-semibold text-2xl text-textLight pb-4'>Backend</h3>
             <div className='flex flex-wrap gap-3 pr-4 pl-4 justify-center'>
               {skillBack.map((skill) => (
+                <div 
+                key={skill.id}
+                className='text-center text-sm text-textLight font-semibold inline-flex items-center pl-3 pr-4 pt-2.5 pb-2.5 rounded-lg gap-4 ring-2 ring-white/10'>
+                  <Image src={skill.image} alt='js' className='w-6'/>
+                  <p> {skill.programName} </p>
+                </div>
+              ))}
+ 
+            </div>
+          </div>
+          
+          {/* UI - UX Design skills */}
+          <div className='bg-black/5 rounded-2xl p-6 text-xl text-center ring-1 ring-white/20 drop-shadow-xl'>
+            <h3 className='font-semibold text-2xl text-textLight pb-4'>UX/UI Design</h3>
+            <div className='flex flex-wrap gap-3 pr-4 pl-4 justify-center'>
+              {skilUIUX.map((skill) => (
+                <div 
+                key={skill.id}
+                className='text-center text-sm text-textLight font-semibold inline-flex items-center pl-3 pr-4 pt-2.5 pb-2.5 rounded-lg gap-4 ring-2 ring-white/10'>
+                  <Image src={skill.image} alt='js' className='w-6'/>
+                  <p> {skill.programName} </p>
+                </div>
+              ))}
+ 
+            </div>
+          </div>
+
+          {/* Others technologies */}
+          <div className='bg-black/5 rounded-2xl p-6 text-xl text-center ring-1 ring-white/20 drop-shadow-xl'>
+            <h3 className='font-semibold text-2xl text-textLight pb-4'>UX/UI Design</h3>
+            <div className='flex flex-wrap gap-3 pr-4 pl-4 justify-center'>
+              {skilUIUX.map((skill) => (
                 <div 
                 key={skill.id}
                 className='text-center text-sm text-textLight font-semibold inline-flex items-center pl-3 pr-4 pt-2.5 pb-2.5 rounded-lg gap-4 ring-2 ring-white/10'>
