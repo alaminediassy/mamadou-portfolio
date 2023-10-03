@@ -203,13 +203,13 @@ const Skills = () => {
   return (
     <section id='skills'>
         <div className='max-w-contentContainer  mx-auto py-4 mdl:py-28 flex flex-col gap-4 lgl:gap-8 mdl:px-10 xl:px-4'>
-        <div className='text-center text-textLight pb-2'>
+        <div className='text-center text-textLight pb-2 '>
           <h1 className='text-3xl font-bold'>Skills</h1>
-          <p>Here are some of the technologies I&apos;m currently engaged in.</p>
+          <p className='text-sm text-textOrange'>Here are some of the technologies I&apos;m currently engaged in.</p>
         </div>
         <div className='grid grid-cols-1 gap-8 md:grid-cols-2'>
          {/*  Frontend skills */}
-          <div className='bg-black/5 rounded-2xl p-6 text-xl text-center ring-1 ring-white/20 drop-shadow-xl'>
+          <div className='bg-black/5 rounded-2xl p-6 text-xl text-center ring-1 ring-white/20 drop-shadow-xl shadow-lg shadow-blue-800/20'>
             <h3 className='font-semibold text-2xl text-textLight pb-4'>Frontend</h3>
             <div className='flex flex-wrap gap-3 pr-4 pl-4 justify-center'>
               {skillFront.map((skill) => (
@@ -224,7 +224,7 @@ const Skills = () => {
           </div>
           
           {/* Backend skills */}
-          <div className='bg-black/5 rounded-2xl p-6 text-xl text-center ring-1 ring-white/20 drop-shadow-xl'>
+          <div className='bg-black/5 rounded-2xl p-6 text-xl text-center ring-1 ring-white/20 drop-shadow-xl shadow-lg shadow-blue-800/20'>
             <h3 className='font-semibold text-2xl text-textLight pb-4'>Backend</h3>
             <div className='flex flex-wrap gap-3 pr-4 pl-4 justify-center'>
               {skillBack.map((skill) => (
@@ -240,7 +240,7 @@ const Skills = () => {
           </div>
           
           {/* UI - UX Design skills */}
-          <div className='bg-black/5 rounded-2xl p-6 text-xl text-center ring-1 ring-white/20 drop-shadow-xl'>
+          <div className='bg-black/5 rounded-2xl p-6 text-xl text-center ring-1 ring-white/20 drop-shadow-xl shadow-lg shadow-blue-800/20'>
             <h3 className='font-semibold text-2xl text-textLight pb-4'>UX/UI Design</h3>
             <div className='flex flex-wrap gap-3 pr-4 pl-4 justify-center'>
               {skilUIUX.map((skill) => (
@@ -256,10 +256,10 @@ const Skills = () => {
           </div>
 
           {/* Others technologies */}
-          <div className='bg-black/5 rounded-2xl p-6 text-xl text-center ring-1 ring-white/20 drop-shadow-xl'>
+          <div className='bg-black/5 rounded-2xl p-6 text-xl text-center ring-1 ring-white/20 drop-shadow-xl shadow-lg shadow-blue-800/20'>
             <h3 className='font-semibold text-2xl text-textLight pb-4'>UX/UI Design</h3>
             <div className='flex flex-wrap gap-3 pr-4 pl-4 justify-center'>
-              {skilUIUX.map((skill) => (
+              {others.map((skill) => (
                 <div 
                 key={skill.id}
                 className='text-center text-sm text-textLight font-semibold inline-flex items-center pl-3 pr-4 pt-2.5 pb-2.5 rounded-lg gap-4 ring-2 ring-white/10'>

@@ -5,13 +5,19 @@ import Link from "next/link"
 import SocialLink from "./SocialLink"
 
 const Banner = () => {
+   
+
   return (
     <section id='home' className='max-w-contentContainer mx-auto py-4 mdl:py-4 flex flex-col gap-4 lgl:gap-8 mdl:px-10 xl:px-4 '>
-        <div className="block h-36 w-36 origin-left pointer-events-auto">
+        <motion.div
+        initial={{ y:10, opacity: 0}}
+        animate={{ y: 0, opacity: 1}}
+        transition={{duration: 0.5, delay: 1.8}}
+        className="block h-36 w-36 origin-left pointer-events-auto">
         <Image 
         src={Avatar}
         alt="Avatar"/>
-        </div>
+        </motion.div>
         <div className='relative isolate'>
         {/* <svg viewBox="0 0 1024 1024"
             className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full opacity-20 sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
@@ -65,7 +71,7 @@ const Banner = () => {
             initial={{ y:10, opacity: 0}}
             animate={{ y: 0, opacity: 1}}
             transition={{duration: 0.5, delay: 0.9}}
-            className="w-52 h-14 text-sm font-titleFont border border-textOrange rounded-md text-textOrange tracking-wide hover:bg-hoverColor duration-300">
+            className="w-40 h-10 text-sm font-titleFont border border-textOrange rounded-md text-textOrange tracking-wide hover:bg-hoverColor duration-300">
                 Download my CV
             </motion.button>
             
