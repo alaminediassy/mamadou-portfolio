@@ -36,7 +36,7 @@ import intellij from '../public/assets/images/others/intellij.png'
 import vscode from '../public/assets/images/others/vscode.png'
 
 
-
+// Skills content
 const skillFront = [
   {
     id: 1,
@@ -146,6 +146,31 @@ const skillBack = [
 const skilUIUX = [
   {
     id: 1,
+    programName: "Github",
+    image: github,
+  },
+  {
+    id: 2,
+    programName: "Gitlab",
+    image: gitlab,
+  },
+  {
+    id: 3,
+    programName: "Postman",
+    image: postman,
+  },
+  {
+    id: 4,
+    programName: "Intellij",
+    image: intellij,
+  },
+  {
+    id: 5,
+    programName: "Vscode",
+    image: vscode,
+  },
+  {
+    id: 1,
     programName: "Figma",
     image: figma,
   },
@@ -171,107 +196,66 @@ const skilUIUX = [
   },
 ]
 
-const others = [
-  {
-    id: 1,
-    programName: "Github",
-    image: github,
-  },
-  {
-    id: 2,
-    programName: "Gitlab",
-    image: gitlab,
-  },
-  {
-    id: 3,
-    programName: "Postman",
-    image: postman,
-  },
-  {
-    id: 4,
-    programName: "Intellij",
-    image: intellij,
-  },
-  {
-    id: 5,
-    programName: "Vscode",
-    image: vscode,
-  },
-]
 
 const Skills = () => {
   return (
     <section id='skills'>
         <div className='max-w-contentContainer  mx-auto py-4 mdl:py-28 flex flex-col gap-4 lgl:gap-8 mdl:px-10 xl:px-4'>
-        <div className='text-center text-textLight pb-2 '>
-          <h1 className='text-3xl font-bold'>Skills</h1>
-          <p className='text-sm text-textOrange'>Here are some of the technologies I&apos;m currently engaged in.</p>
-        </div>
-        <div className='grid grid-cols-1 gap-8 md:grid-cols-2'>
-         {/*  Frontend skills */}
-          <div className='bg-black/5 rounded-2xl p-6 text-xl text-center ring-1 ring-white/20 drop-shadow-xl shadow-lg shadow-blue-800/20'>
-            <h3 className='font-semibold text-2xl text-textLight pb-4'>Frontend</h3>
-            <div className='flex flex-wrap gap-3 pr-4 pl-4 justify-center'>
-              {skillFront.map((skill) => (
-                <div 
-                key={skill.id}
-                className='text-center text-sm text-textLight font-semibold inline-flex items-center pl-3 pr-4 pt-2.5 pb-2.5 rounded-lg gap-4 ring-2 ring-white/10'>
-                  <Image src={skill.image} alt='js' className='w-6'/>
-                  <p> {skill.programName} </p>
-                </div>
-              ))}
-            </div>
+          <div className='text-center text-textLight pb-2 '>
+            <h1 className='text-3xl font-bold'>Skills</h1>
+            <p className='text-md text-textOrange'>Here are some of the technologies I&apos;m currently engaged in.</p>
           </div>
-          
-          {/* Backend skills */}
-          <div className='bg-black/5 rounded-2xl p-6 text-xl text-center ring-1 ring-white/20 drop-shadow-xl shadow-lg shadow-blue-800/20'>
-            <h3 className='font-semibold text-2xl text-textLight pb-4'>Backend</h3>
-            <div className='flex flex-wrap gap-3 pr-4 pl-4 justify-center'>
-              {skillBack.map((skill) => (
-                <div 
-                key={skill.id}
-                className='text-center text-sm text-textLight font-semibold inline-flex items-center pl-3 pr-4 pt-2.5 pb-2.5 rounded-lg gap-4 ring-2 ring-white/10'>
-                  <Image src={skill.image} alt='js' className='w-6'/>
-                  <p> {skill.programName} </p>
-                </div>
-              ))}
- 
+          <div className='grid grid-cols-1 gap-8 lg:grid-cols-2'>
+          {/*  Frontend skills */}
+            <div className='bg-black/5 rounded-2xl p-6 text-xl text-center ring-1 ring-white/20 drop-shadow-xl shadow-lg shadow-blue-800/20'>
+              <h3 className='font-semibold text-2xl text-textLight pb-4'>Frontend</h3>
+              <div className='flex flex-wrap gap-3 pr-4 pl-4 justify-center'>
+                {skillFront.map((skill) => (
+                  <div 
+                  key={skill.id}
+                  className='text-center text-sm text-textLight font-semibold inline-flex items-center pl-3 pr-4 pt-2.5 pb-2.5 rounded-lg gap-4 ring-2 ring-white/10'>
+                    <Image src={skill.image} alt='js' className='w-6'/>
+                    <p> {skill.programName} </p>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-          
-          {/* UI - UX Design skills */}
-          <div className='bg-black/5 rounded-2xl p-6 text-xl text-center ring-1 ring-white/20 drop-shadow-xl shadow-lg shadow-blue-800/20'>
-            <h3 className='font-semibold text-2xl text-textLight pb-4'>UX/UI Design</h3>
-            <div className='flex flex-wrap gap-3 pr-4 pl-4 justify-center'>
-              {skilUIUX.map((skill) => (
-                <div 
-                key={skill.id}
-                className='text-center text-sm text-textLight font-semibold inline-flex items-center pl-3 pr-4 pt-2.5 pb-2.5 rounded-lg gap-4 ring-2 ring-white/10'>
-                  <Image src={skill.image} alt='js' className='w-6'/>
-                  <p> {skill.programName} </p>
-                </div>
-              ))}
- 
+            
+            {/* Backend skills */}
+            <div className='bg-black/5 rounded-2xl p-6 text-xl text-center ring-1 ring-white/20 drop-shadow-xl shadow-lg shadow-blue-800/20'>
+              <h3 className='font-semibold text-2xl text-textLight pb-4'>Backend</h3>
+              <div className='flex flex-wrap gap-3 pr-4 pl-4 justify-center'>
+                {skillBack.map((skill) => (
+                  <div 
+                  key={skill.id}
+                  className='text-center text-sm text-textLight font-semibold inline-flex items-center pl-3 pr-4 pt-2.5 pb-2.5 rounded-lg gap-4 ring-2 ring-white/10'>
+                    <Image src={skill.image} alt='js' className='w-6'/>
+                    <p> {skill.programName} </p>
+                  </div>
+                ))}
+  
+              </div>
             </div>
+            
           </div>
 
-          {/* Others technologies */}
-          <div className='bg-black/5 rounded-2xl p-6 text-xl text-center ring-1 ring-white/20 drop-shadow-xl shadow-lg shadow-blue-800/20'>
-            <h3 className='font-semibold text-2xl text-textLight pb-4'>UX/UI Design</h3>
-            <div className='flex flex-wrap gap-3 pr-4 pl-4 justify-center'>
-              {others.map((skill) => (
-                <div 
-                key={skill.id}
-                className='text-center text-sm text-textLight font-semibold inline-flex items-center pl-3 pr-4 pt-2.5 pb-2.5 rounded-lg gap-4 ring-2 ring-white/10'>
-                  <Image src={skill.image} alt='js' className='w-6'/>
-                  <p> {skill.programName} </p>
+          <div className='grid grid-cols-1'>
+              {/* UI - UX Design skills */}
+            <div className='bg-black/5 rounded-2xl p-6 col-start-1 col-end-3 text-xl text-center ring-1 ring-white/20 drop-shadow-xl shadow-lg shadow-blue-800/20'>
+                <h3 className='font-semibold text-2xl text-textLight pb-4'>Developer tools & Ui, UX Design</h3>
+                <div className='flex flex-wrap gap-3 pr-4 pl-4 justify-center'>
+                  {skilUIUX.map((skill) => (
+                    <div 
+                    key={skill.id}
+                    className='text-center text-sm text-textLight font-semibold inline-flex items-center pl-3 pr-4 pt-2.5 pb-2.5 rounded-lg gap-4 ring-2 ring-white/10'>
+                      <Image src={skill.image} alt='js' className='w-6'/>
+                      <p> {skill.programName} </p>
+                    </div>
+                  ))}
                 </div>
-              ))}
- 
-            </div>
+              </div>
           </div>
-        </div>
-        
+          
       </div>
     </section>
     

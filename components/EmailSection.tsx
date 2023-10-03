@@ -1,10 +1,50 @@
-import React from "react";
+import React, {useState, useRef} from "react";
 import Navbar from "./Navbar";
 import SocialLink from "./SocialLink";
 import Footer from "./Footer";
 import { LeftSide } from "./LeftSide";
+import emailjs from '@emailjs/browser';
+import Result from "./Result";
+
+
+
+
 
 const EmailSection = () => {
+  const form = useRef<HTMLFormElement | null>(null);
+  const [result, setResult] = useState(false);
+  
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  
+    const formElement = form.current;
+  
+    if (formElement) {
+      // Utilisez formElement uniquement si formElement n'est pas null
+      emailjs
+        .sendForm(
+          'service_3bk308t',
+          'template_ef8lgwg',
+          formElement,
+          'W1qFF9C-wTgBfbVEA'
+        )
+        .then((result) => {
+          console.log('E-mail envoyé avec succès:', result.text);
+          // Vous pouvez mettre à jour l'état ou effectuer d'autres actions ici si nécessaire
+        })
+        .catch((error) => {
+          console.error('Erreur lors de l\'envoi de l\'e-mail:', error.text);
+          // Gérez les erreurs d'envoi ici si nécessaire
+        });
+  
+      formElement.reset();
+      setResult(true);
+    }
+  };
+  
+
+
   return (
      <div className="max-w-contentContainer mx-auto gap-4 lgl:gap-8 mdl:px-10 xl:px-4">
         <div className="hidden xl:inline-flex w-32 h-full fixed left-0 bottom-0">
@@ -25,7 +65,7 @@ const EmailSection = () => {
             </div>
         </div>
         <div>
-          <form action="" className="flex flex-col">
+          <form action="" className="flex flex-col" ref={form} onSubmit={sendEmail}>
                   <div className="grid mb-6 gap-3 xl:grid-cols-2">
                     <div className="">
                       <label htmlFor="name" typeof="text" className="text-textdark block text-sm font-medium">Your Name *</label>
@@ -62,7 +102,13 @@ const EmailSection = () => {
                     placeholder="Lets telk about"
                     className="bg-white/5 border h-[200px] w-full mt-2 border-white/10 rounded-xl pl-6 text-sm pt-2.5 pb-2.5 focus:outline-none focus:border-textOrange focus:ring-1/2 focus:ring-textOrange"></textarea>
                   </div>
-                  <button className="bg-textOrange/90 px-5 text-white w-full rounded-xl p-2.5 hover:bg-textOrange">Send message</button>
+                  <button
+                    type="submit" value="Send"
+                    className="bg-textOrange/90 px-5 text-white w-full rounded-xl p-2.5 hover:bg-textOrange">Send message
+                  </button>
+                  <div className=""> 
+                    {result ? <Result/> : null}
+                  </div>
           </form>
         </div>
         </section>

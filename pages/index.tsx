@@ -4,7 +4,6 @@ import { motion, useScroll } from "framer-motion";
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 import Content from "@/components/Content";
-import Background from "@/components/Background";
 import Skills from "@/components/Skills";
 import RightSide from "@/components/RightSide"
 import Archive from "@/components/Archive";
