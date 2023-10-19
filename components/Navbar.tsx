@@ -32,12 +32,13 @@ const Navbar = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
+          className="xl:pl-36 "
         >
           <Link href="/">
             <Image className='w-11' src={logo} alt='logo'/>
           </Link>
         </motion.div>
-        <div className="hidden mdl:inline-flex items-center gap-7">
+        <div className="hidden mdl:inline-flex items-center gap-7 xl:pr-36">
           <ul className="flex text-[13px] gap-7">
             <Link
               href="#home"

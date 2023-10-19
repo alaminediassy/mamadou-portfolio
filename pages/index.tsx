@@ -8,6 +8,7 @@ import Skills from "@/components/Skills";
 import RightSide from "@/components/RightSide"
 import Archive from "@/components/Archive";
 import EmailSection from "@/components/EmailSection";
+import InfiniteLooper from "@/components/InfiniteLooper";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -37,6 +38,7 @@ export default function Home() {
           </motion.div>
           <div className="h-[88vh] w-full mx-auto p-4 ">
             <Banner/>
+            <InfiniteLooper/>
             <Skills/>
             {/* <Archive/> */}
             <Content/>
