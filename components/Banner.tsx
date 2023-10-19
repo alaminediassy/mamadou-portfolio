@@ -76,7 +76,7 @@ const Banner = () => {
             </motion.button>
             
         </Link>
-        <SocialLink/>
+        {/* <SocialLink/> */}
     </section>
   )
 }

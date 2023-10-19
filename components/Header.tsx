@@ -13,7 +13,7 @@ const Header = () => {
   ]
   
   return (
-    <div>
+    <div id="home">
       <div className="pointer-events-none relative z-50 flex flex-none flex-col">
       <div className="top-0 z-10 h-16 pt-6">
         <div className="sm:px-8 top-[var(--header-top,theme(spacing.6))] w-full">

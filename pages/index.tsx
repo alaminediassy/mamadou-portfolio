@@ -7,6 +7,7 @@ import Content from "@/components/Content";
 import Skills from "@/components/Skills";
 import RightSide from "@/components/RightSide"
 import Archive from "@/components/Archive";
+import EmailSection from "@/components/EmailSection";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -39,6 +40,7 @@ export default function Home() {
             <Skills/>
             {/* <Archive/> */}
             <Content/>
+            <EmailSection/>
             <Footer/>
           </div>
           <motion.div 

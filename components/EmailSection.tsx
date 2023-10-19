@@ -46,7 +46,7 @@ const EmailSection = () => {
 
 
   return (
-     <div className="max-w-contentContainer mx-auto gap-4 lgl:gap-8 mdl:px-10 xl:px-4">
+     <div id="contact" className="max-w-contentContainer mx-auto gap-4 lgl:gap-8 mdl:px-10 xl:px-4">
         <div className="hidden xl:inline-flex w-32 h-full fixed left-0 bottom-0">
           <LeftSide/>
         </div>
@@ -112,7 +112,7 @@ const EmailSection = () => {
           </form>
         </div>
         </section>
-        <Footer/>
+        {/* <Footer/> */}
      </div>
          
   );
