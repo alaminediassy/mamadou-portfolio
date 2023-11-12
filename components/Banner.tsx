@@ -13,9 +13,9 @@ const Banner = () => {
       <motion.div
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 1.8 }}
-        className="block h-36 w-36 mx-auto pointer-events-auto">
-        <Image src={Avatar} alt="Avatar" />
+        transition={{ duration: 0.5, delay: 1 }}
+        className="block h-40 w-40 mx-auto pointer-events-auto ">
+        <Image src={Avatar} alt="Avatar" className="hover:translate-y-2 duration-300 transition-transform transform hover:scale-110" />
       </motion.div>
       <div className="relative isolate"></div>
       <motion.h1

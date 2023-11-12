@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import AOS from 'aos'
 // Frontend icon images
 import js from '../public/assets/images/front/js.png'
 import react from '../public/assets/images/front/reactjs.png'
@@ -207,7 +208,7 @@ const Skills = () => {
           </div>
           <div className='grid grid-cols-1 gap-8 lg:grid-cols-2'>
           {/*  Frontend skills */}
-            <div className='bg-black/5 rounded-2xl p-6 text-xl text-center ring-1 ring-white/20 drop-shadow-xl shadow-lg shadow-blue-800/20'>
+            <div className='bg-black/5 rounded-2xl p-6 text-xl text-center ring-1 ring-white/20 drop-shadow-xl shadow-lg shadow-blue-800/20' data-aos="fade-right">
               <h3 className='font-semibold text-2xl text-textLight pb-4'>Frontend</h3>
               <div className='flex flex-wrap gap-3 pr-4 pl-4 justify-center'>
                 {skillFront.map((skill) => (
@@ -222,7 +223,7 @@ const Skills = () => {
             </div>
             
             {/* Backend skills */}
-            <div className='bg-black/5 rounded-2xl p-6 text-xl text-center ring-1 ring-white/20 drop-shadow-xl shadow-lg shadow-blue-800/20'>
+            <div className='bg-black/5 rounded-2xl p-6 text-xl text-center ring-1 ring-white/20 drop-shadow-xl shadow-lg shadow-blue-800/20' >
               <h3 className='font-semibold text-2xl text-textLight pb-4'>Backend</h3>
               <div className='flex flex-wrap gap-3 pr-4 pl-4 justify-center'>
                 {skillBack.map((skill) => (

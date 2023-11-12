@@ -77,7 +77,7 @@ const Navbar = () => {
               </motion.li>
             </Link>
             <Link
-              href="#Project"
+              href="/project"
               className={`flex items-center gap-1 font-medium text-textDark hover:text-textOrange cursor-pointer duration-300 nav-link ${router.asPath === '/Project' ? 'text-textOrange' : 'text-textLight'}`}
             >
               <motion.li
@@ -198,7 +198,7 @@ const Navbar = () => {
                     </motion.li>
                   </Link>
                   <Link
-                    href="/"
+                    href="/project"
                     className="flex items-center gap-1 font-medium text-textDark hover:text-textOrange cursor-pointer
                     duration-300 nav-link"
                   >

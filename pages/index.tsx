@@ -38,7 +38,7 @@ export default function Home() {
           </motion.div>
           <div className="h-[88vh] w-full mx-auto p-4 ">
             <Banner/>
-            <InfiniteLooper/>
+            {/* <InfiniteLooper/> */}
             <Skills/>
             {/* <Archive/> */}
             <Content/>
