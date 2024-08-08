@@ -203,8 +203,10 @@ const Skills = () => {
     <section id='skills'>
         <div className='max-w-contentContainer  mx-auto py-4 mdl:py-28 flex flex-col gap-4 lgl:gap-8 mdl:px-10 xl:px-4'>
           <div className='text-center text-textLight pb-2 '>
-            <h1 className='text-3xl font-bold'>Skills</h1>
-            <p className='text-md text-textLight'>Here are some of the technologies I&apos;m currently engaged in.</p>
+            <h1 className='text-3xl font-bold'>Compétences</h1>
+            <p className='text-md text-textLight'>
+              Les technologies avec lesquelles je travaille actuellement.
+            </p>
           </div>
           <div className='grid grid-cols-1 gap-8 lg:grid-cols-2'>
           {/*  Frontend skills */}

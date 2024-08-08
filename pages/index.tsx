@@ -9,6 +9,8 @@ import RightSide from "@/components/RightSide"
 import Archive from "@/components/Archive";
 import EmailSection from "@/components/EmailSection";
 import InfiniteLooper from "@/components/InfiniteLooper";
+import { LeftSide } from "@/components/LeftSide";
+import Work from "@/components/Work";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -34,11 +36,12 @@ export default function Home() {
           animate={{ opacity: 1}}
           transition={{ delay: 1.5 }}
           className="hidden xl:inline-flex w-32 h-full fixed left-0 bottom-0">
-            {/* <LeftSide/> */}
+          <LeftSide/>
           </motion.div>
           <div className="h-[88vh] w-full mx-auto p-4 ">
             <Banner/>
             {/* <InfiniteLooper/> */}
+            
             <Skills/>
             {/* <Archive/> */}
             <Content/>

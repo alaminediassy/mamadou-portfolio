@@ -10,9 +10,9 @@ const workData = [
   {
     id: 1,
     company: "Intrepide Studio",
-    role: "intern in web development",
+    role: "Stage en développement web development",
     startTime: "Août 2023",
-    endTime: "Present",
+    endTime: "Déc 2023",
     image: Intrepide,
   },
   {
