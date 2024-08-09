@@ -26,19 +26,19 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <div className="w-full h-20 lg:h-[12vh] sticky transition-colors duration-500 backdrop-blur top-0 z-50 bg-bodyColor px-4">
+    <div className="w-full h-20 lg:h-[12vh] sticky transition-colors duration-500 backdrop-blur top-0 z-50 bg-opacity-90 bg-bodyColor px-4">
       <div className="max-w-container h-full mx-auto py-1  font-titleFont flex items-center justify-between">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="xl:pl-36 "
+          className="xl:pl-10"
         >
           <Link href="/">
             <Image className='w-11' src={logo} alt='logo'/>
           </Link>
         </motion.div>
-        <div className="hidden mdl:inline-flex items-center gap-7 xl:pr-36">
+        <div className="hidden mdl:inline-flex items-center gap-7 ">
           <ul className="flex text-[13px] gap-7">
             <Link
               href="#home"
@@ -124,6 +124,15 @@ const Navbar = () => {
               Download CV
             </motion.button>
           </Link> */}
+        </div>
+        <div className="xl:pr-10">
+        <a href="mailto:diassy.alamine@gmail.com">
+          <button 
+            className="pt-2 pb-2 pr-4 pl-4 rounded-lg text-white bg-textOrange hover:bg-orange-700 transition-500"
+          >
+            Contacter
+          </button>
+        </a>
         </div>
         {/* small icon section */}
         <div
