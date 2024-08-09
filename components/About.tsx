@@ -14,6 +14,9 @@ import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import { FaXTwitter } from "react-icons/fa6";
+
+
 
 const AboutSection = () => {
   return (
@@ -47,7 +50,7 @@ const AboutSection = () => {
                       <p>
                         je suis un passionné du monde de l&apos;informatique,
                         particulièrement du développement web. Mon
-                        parcoursacadémique a été façonné par ma quête constante
+                        parcours académique a été façonné par ma quête constante
                         de maîtriser les compétences nécessaires pour exceller
                         dans ce domaine dynamique et en constante évolution.
                       </p>
@@ -89,21 +92,21 @@ const AboutSection = () => {
                         hover:text-textOrange dark:text-textSlow dark:hover:text-textOrange"
                         >
                           <span className="h-6 w-6 text-xl flex-none fill-zinc-500 transition group-hover:fill-textOrange">
-                            <SlSocialTwitter />
+                            <FaXTwitter />
                           </span>
-                          <span className="ml-4">Follow on Twitter</span>
+                          <span className="ml-4">Me Suivre sur X</span>
                         </Link>
                       </li>
                       <li className="mt-4 flex">
                         <Link
-                          href="https://instagram.com/lamiinediassy?igshid=OGQ5ZDc2ODk2ZA=="
+                          href="https://instagram.com/diassyofficiel?igshid=OGQ5ZDc2ODk2ZA=="
                           className="group flex text-sm font-medium text-textSlow transition 
                         hover:text-textOrange dark:text-textSlow dark:hover:text-textOrange"
                         >
                           <span className="h-6 w-6 text-xl flex-none fill-zinc-500 transition group-hover:fill-textOrange">
                             <SlSocialInstagram />
                           </span>
-                          <span className="ml-4">Follow on Instagram</span>
+                          <span className="ml-4">Me Suivre sur Instagram</span>
                         </Link>
                       </li>
                       <li className="mt-4 flex">
@@ -115,7 +118,7 @@ const AboutSection = () => {
                           <span className="h-6 w-6 text-xl flex-none fill-zinc-500 transition group-hover:fill-textOrange">
                             <BsGithub />
                           </span>
-                          <span className="ml-4">Follow on Github</span>
+                          <span className="ml-4">Me Suivre sur Github</span>
                         </Link>
                       </li>
                       <li className="mt-4 flex">
@@ -127,7 +130,7 @@ const AboutSection = () => {
                           <span className="h-6 w-6 text-xl flex-none fill-zinc-500 transition group-hover:fill-textOrange">
                             <FaLinkedin />
                           </span>
-                          <span className="ml-4">Follow on Linkedin</span>
+                          <span className="ml-4">Me Suivre sur Linkedin</span>
                         </Link>
                       </li>
                       <li className="mt-8 border-t border-textSlow/60 pt-8 dark:border-zinc-700/40 flex">

@@ -25,7 +25,7 @@ const Footer = () => {
                                     </a>
                                 </div>
                                 <p className='text-sm text-textLight'>
-                                    © 2023 Mamadou Lamine DIASSY. All rights reserved 
+                                    © 2024 Mamadou Lamine DIASSY. Tous droits réservés 
                                 </p>
                             </div>
                         </div>
