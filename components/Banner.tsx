@@ -15,7 +15,7 @@ const Banner = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 1 }}
         className="block h-40 w-40 pointer-events-auto ">
-        <Image src={Avatar} alt="Avatar" className=" hover:translate-y-2 duration-300 transition-transform transform hover:scale-110" />
+        <Image src={Avatar} alt="userProfile" className=" hover:translate-y-2 duration-300 transition-transform transform hover:scale-110" />
       </motion.div>
       <div className="relative isolate"></div>
       <motion.h1
@@ -24,7 +24,7 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-5xl lgl:text-5xl font-titleFont font-semibold flex flex-col tracking-tight sm:text-5xl ">
         Mamadou Lamine DIASSY <br></br>
-        développeur d&apos;application web.{" "}
+        développeur d&apos;applications.{" "}
       </motion.h1>
       <div className="flex flex-col">
         <motion.p
