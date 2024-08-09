@@ -128,7 +128,7 @@ const Navbar = () => {
         <div className="xl:pr-10">
         <a href="mailto:diassy.alamine@gmail.com">
           <button 
-            className="pt-2 pb-2 pr-4 pl-4 rounded-lg text-white bg-textOrange hover:bg-orange-700 transition-500"
+            className="hidden mdl:inline-flex pt-2 pb-2 pr-4 pl-4 rounded-lg text-white bg-textOrange hover:bg-orange-700 transition-500"
           >
             Contacter
           </button>
@@ -233,14 +233,14 @@ const Navbar = () => {
                     </motion.li>
                   </Link>
                 </ul>
-                <a href="/assets/mamadou-resume.pdf" target="_blank">
+                <a href="mailto:diassy.alamine@gmail.com" target="_blank">
                   <motion.button
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.6, ease: "easeIn" }}
-                    className="w-32 h-10 rounded-md text-textOrange text-[13px] border border-textOrange hover:bg-hoverColor duration-300"
+                    className="pt-2 pb-2 pr-4 pl-4 rounded-lg text-white bg-textOrange hover:bg-orange-700 transition-500"
                   >
-                    Download CV
+                    Contacter
                   </motion.button>
                 </a>
                 <div className="flex gap-4">
